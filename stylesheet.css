@@ -295,7 +295,50 @@ h2{
     cursor: pointer;
 }
 
+/*---- SOCIAL ICONS ----*/
 
+.social-i {
+    max-width: 150px;
+    display: block;
+    margin: 15px auto;
+    height: 180px;
+    color: transparent;
+}
+
+.github {
+    background-image: url('Images/contact/Github.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.github:hover {
+    background-image: url('Images/contact/GitHub-Hover.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.email {
+    background-image: url('Images/contact/Email.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.email:hover {
+    background-image: url('Images/contact/Email-Hover.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.linkedin {
+    background-image: url('Images/contact/Linkedin.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.linkedin:hover {
+    background-image: url('Images/contact/LinkedIn-hover.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 /*----- MEDIA QUERIES -------*/
 @media screen and (max-width: 838px) {
