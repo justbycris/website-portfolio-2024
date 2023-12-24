@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/*----------HEADER ------------*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+    /* background-color: green; */
+}
+
+.name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    color: #000;
+    /* background-color: orange; */
+    padding: 15px 0 20px 0;
+    animation: bounceIn .8s ease-out;
+    background-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 65%;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+nav ul a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    animation: bounceIn .8s ease-out;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+.work-a:hover {
+    background-color: #f824de;
+    color: #fff;
+}
+
+.about-a:hover {
+    background-color: #1b6df8;
+    color:#fff;
+}
+
+.contact-a:hover {
+    background-color: #25f840;
+}
+
+.header hr {
+    width: 65%;
+    height: 5px;
+    background-color: #000;
+    border: none;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 40px;
+}
+
+
+/*------TEXT ANIMATIONS HEADER -------*/
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*---------- WORK SECTION ----------*/ 
+
+.flex-container {
+    position: absolute;
+    width: 100%;
+    /* min-height: 400px; */
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.item {
+    align-content: center;
+    width: 350px;
+    height :100%;
+    margin: 0 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    
+    cursor: pointer;
+}
+
+.square-img {
+    width: 100%;
+    margin: 15px auto;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.square-img:hover {
+    transform: scale(0.9);
+}
+
+.item span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.item a {
+    text-decoration: none;
+    color: #000;
+}
+/* .home-1:hover {
+    background-color: #c70014;
+    color: #fff;
+} */
+/* ------ DIGITAL ART SECTION -------*/
+
+.work-container {
+    flex-wrap: wrap ;
+    top: 30%;
+    transform: translateY(0%);
+}
+
+.da-img {
+    width: 100%;
+    margin: 15px auto;
+    cursor:default;
+}
+
+.code-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+}
+
+.item .red:hover {
+    background-color: rgb(255, 54, 54);
+}
+
+.item .blue:hover {
+    background-color: #341fef;
+}
+
+.item .orange:hover {
+    background-color: rgb(255, 127, 30);
+}
+
+.item .green:hover {
+    background-color: rgb(0, 196, 29);
+}
+
+.pj-btn {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin: 15px auto;
+    width: 130px;
+    font-size: 1.4rem;    
+    border: 2px solid black;
+    
+}
+
+.pj-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+/*-------- WORK SECTION ANIMATIONS ------*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*----------------ABOUT SECTION----------*/
+
+.about-container {
+    display: flex;
+    justify-content:center;
+    flex-flow: row nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    margin: -10px auto 30px auto;
+    padding: 0;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    font-weight: normal;
+    line-height: 1em;
+    width:100%;  
+    box-sizing: border-box;
+    margin: 0  auto; 
+    text-align: center;
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    line-height: 1em;
+    width:70%;  
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin: 0 0 0 auto;
+}
+
+.about-text .h1-1:hover {
+    background-color: #3e3eff;
+    color: #fff;
+}
+
+.about-text .h1-2:hover {
+    background-color: #ff3eff;
+    
+}
+
+.about-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 0 0 auto;
+}
+
+.about-text p:hover {
+    background-color: rgb(255,207,62);
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    display: block;
+    width: 50%;
+    margin: 0 auto 0 15%;
+    box-sizing: border-box;
+}
+
+.img-link img {
+    cursor: pointer;
+}
+
+
+
+/*----- MEDIA QUERIES -------*/
+@media screen and (max-width: 838px) {
+
+    .flex-container {
+        flex-flow: row wrap;
+        width: 100%;
+        overflow-y: scroll;
+        transform: translateY(0%);
+        top: 31%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        margin: 0 auto;
+    }
+
+    .about-text p {
+        margin: 0 auto;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img {
+        margin: 0 auto;
+    }
+
+}
