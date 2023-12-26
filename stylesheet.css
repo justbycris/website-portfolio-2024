@@ -204,7 +204,7 @@ nav a {
 .work-container {
     -ms-flex-wrap: wrap ;
         flex-wrap: wrap ;
-    top: 30%;
+    top: 40%;
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
             transform: translateY(0%);
@@ -348,12 +348,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7rem;
     font-weight: normal;
-    line-height: 1em;
+    line-height: 1.4em;
     width:100%;  
     -webkit-box-sizing: border-box;  
             box-sizing: border-box;
     margin: 0  auto; 
     text-align: center;
+    padding: 0 18px;
 }
 
 h2{
@@ -507,7 +508,15 @@ h2{
         -webkit-transform: translateY(0%);
             -ms-transform: translateY(0%);
                 transform: translateY(0%);
-        top: 31%;
+        top: 38%;
+    }
+
+    .work-container {
+        top: 30%;
+    }
+
+    .web-container {
+        top: 45%;
     }
 
     .about-container {
@@ -520,26 +529,67 @@ h2{
                 justify-content: center;
     }
 
+
     .about-text {
         margin: 0 auto;
         width: 100%;
         text-align: center;
     }
 
-    .about-text h1 {
+    .about-text h2 {
+        padding: 0;
+        font-size: 3.5rem;
         margin: 0 auto;
     }
 
     .about-text p {
+        width: 80%;
+        font-size: 1.3rem;
         margin: 0 auto;
     }
 
     .about-img {
         width: 100%;
+        
     }
 
     .about-img img {
         margin: 0 auto;
     }
 
+    .center-container {
+        margin-bottom: 50px;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .c-item {
+        margin: 10px auto;
+    }
 }
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 480px) {
+    .work-container {
+        top: 30%;
+    }
+    .web-container {
+        top: 45%;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 410px) {
+    .flex-container {
+        top: 34%;
+    }
+
+    .work-container {
+        top: 40%;
+    }
+
+    .web-container {
+        top: 61%;
+    }
+  }
