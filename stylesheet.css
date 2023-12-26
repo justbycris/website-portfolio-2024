@@ -343,12 +343,7 @@ h2{
     color: #fff;
 }
 
-.github {
-    background-image: url('Images/contact/Github.png');
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .github:hover {
     background-image: url('Images/contact/GitHub-Hover.png');
@@ -358,32 +353,32 @@ h2{
     background-color:#6F3EB6; 
 }
 
-.email {
-    background-image: url('Images/contact/Email.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .email:hover {
     background-image: url('Images/contact/Email-Hover.png');
+    background-size:50%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FCE93E;
 }
 
-.linkedin {
-    background-image: url('Images/contact/Linkedin.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 .linkedin:hover {
     background-image: url('Images/contact/LinkedIn-hover.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #2348B8;
+}
+
+
+
+.resume:hover {
+    background-image: url('Images/contact/Resume-Icon.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #74faf3;
 }
 
 
