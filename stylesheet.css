@@ -1,19 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #fff;
 }
 
 /*----------HEADER ------------*/
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
     text-align: center;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 40px 0;
     /* background-color: green; */
 }
@@ -24,14 +33,22 @@
     color: #000;
     /* background-color: orange; */
     padding: 15px 0 20px 0;
-    animation: bounceIn .8s ease-out;
+    -webkit-animation: bounceIn .8s ease-out;
+            animation: bounceIn .8s ease-out;
     background-color: transparent;
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     width: 65%;
     margin: 0 auto;
     /* background-color: pink; */
@@ -43,7 +60,8 @@ nav a {
     text-decoration: none;
     color: #000;
     margin: 0 10px;
-    animation: bounceIn .8s ease-out;
+    -webkit-animation: bounceIn .8s ease-out;
+            animation: bounceIn .8s ease-out;
     cursor: pointer;
     padding: 8px 15px;
 }
@@ -74,18 +92,38 @@ nav a {
 
 
 /*------TEXT ANIMATIONS HEADER -------*/
-@keyframes bounceIn {
+@-webkit-keyframes bounceIn {
     0% {
         opacity: 0;
-        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
     }
     50% {
         opacity: 0.8;
-        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+    }
+    50% {
+        opacity: 0.8;
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
@@ -95,22 +133,36 @@ nav a {
     position: absolute;
     width: 100%;
     /* min-height: 400px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 60%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .item {
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 350px;
     height :100%;
     margin: 0 15px;
     text-align: center;
-    animation: fadeIn 1s ease-out;
+    -webkit-animation: fadeIn 1s ease-out;
+            animation: fadeIn 1s ease-out;
     
     cursor: pointer;
 }
@@ -118,11 +170,17 @@ nav a {
 .square-img {
     width: 100%;
     margin: 15px auto;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    -o-transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .square-img:hover {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
 }
 
 .item span {
@@ -144,9 +202,12 @@ nav a {
 /* ------ DIGITAL ART SECTION -------*/
 
 .work-container {
-    flex-wrap: wrap ;
+    -ms-flex-wrap: wrap ;
+        flex-wrap: wrap ;
     top: 30%;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
 }
 
 .da-img {
@@ -157,10 +218,19 @@ nav a {
 
 .code-btns {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 
 }
 
@@ -204,6 +274,17 @@ nav a {
 
 
 /*-------- WORK SECTION ANIMATIONS ------*/
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -219,25 +300,49 @@ nav a {
 /*----------------ABOUT SECTION----------*/
 
 .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:center;
-    flex-flow: row nowrap;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: -10px auto 30px auto;
     padding: 0;
-    animation: fadeIn 1s ease-out;
+    -webkit-animation: fadeIn 1s ease-out;
+            animation: fadeIn 1s ease-out;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    -o-transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    align-items: center;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .about-text {
     width: 50%;
     margin: 0 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -245,7 +350,8 @@ h1 {
     font-weight: normal;
     line-height: 1em;
     width:100%;  
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;  
+            box-sizing: border-box;
     margin: 0  auto; 
     text-align: center;
 }
@@ -256,7 +362,8 @@ h2{
     line-height: 1em;
     width:70%;  
     padding-left: 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 0 0 auto;
 }
 
@@ -276,7 +383,8 @@ h2{
     text-transform: uppercase;
     width: 70%;
     padding: 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 0 0 auto;
 }
 
@@ -292,7 +400,8 @@ h2{
     display: block;
     width: 50%;
     margin: 0 auto 0 15%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .img-link img {
@@ -303,9 +412,16 @@ h2{
 /*------CONTACT ----*/
 
 .center-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 800px;
     
     margin: 0 auto;
@@ -343,8 +459,6 @@ h2{
     color: #fff;
 }
 
-
-
 .github:hover {
     background-image: url('Images/contact/GitHub-Hover.png');
     background-size: 40%;
@@ -352,7 +466,6 @@ h2{
     background-position: center top;
     background-color:#6F3EB6; 
 }
-
 
 .email:hover {
     background-image: url('Images/contact/Email-Hover.png');
@@ -362,7 +475,6 @@ h2{
     background-color: #FCE93E;
 }
 
-
 .linkedin:hover {
     background-image: url('Images/contact/LinkedIn-hover.png');
     background-size: 50%;
@@ -370,8 +482,6 @@ h2{
     background-position: center;
     background-color: #2348B8;
 }
-
-
 
 .resume:hover {
     background-image: url('Images/contact/Resume-Icon.png');
@@ -383,25 +493,30 @@ h2{
 
 
 
-
-
-
-
-
 /*----- MEDIA QUERIES -------*/
 @media screen and (max-width: 838px) {
 
     .flex-container {
-        flex-flow: row wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
         width: 100%;
         overflow-y: scroll;
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+                transform: translateY(0%);
         top: 31%;
     }
 
     .about-container {
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .about-text {
