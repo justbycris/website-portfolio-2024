@@ -423,7 +423,8 @@ h2{
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 800px;
-    
+    -webkit-animation: fadeIn 1s ease-out;
+            animation: fadeIn 1s ease-out;
     margin: 0 auto;
 }
 
