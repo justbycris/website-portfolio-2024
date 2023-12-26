@@ -24,14 +24,12 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 40px 0;
-    /* background-color: green; */
 }
 
 .name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 5rem;
     color: #000;
-    /* background-color: orange; */
     padding: 15px 0 20px 0;
     -webkit-animation: bounceIn .8s ease-out;
             animation: bounceIn .8s ease-out;
@@ -51,7 +49,7 @@ nav {
             flex-flow: row nowrap;
     width: 65%;
     margin: 0 auto;
-    /* background-color: pink; */
+
 }
 
 nav a {
@@ -130,9 +128,8 @@ nav a {
 /*---------- WORK SECTION ----------*/ 
 
 .flex-container {
-    position: absolute;
+    position: relative;
     width: 100%;
-    /* min-height: 400px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,10 +145,6 @@ nav a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
 }
 
 .item {
@@ -195,10 +188,7 @@ nav a {
     text-decoration: none;
     color: #000;
 }
-/* .home-1:hover {
-    background-color: #c70014;
-    color: #fff;
-} */
+
 /* ------ DIGITAL ART SECTION -------*/
 
 .work-container {
@@ -505,18 +495,6 @@ h2{
                 flex-flow: row wrap;
         width: 100%;
         overflow-y: scroll;
-        -webkit-transform: translateY(0%);
-            -ms-transform: translateY(0%);
-                transform: translateY(0%);
-        top: 38%;
-    }
-
-    .work-container {
-        top: 30%;
-    }
-
-    .web-container {
-        top: 45%;
     }
 
     .about-container {
@@ -569,27 +547,3 @@ h2{
         margin: 10px auto;
     }
 }
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 480px) {
-    .work-container {
-        top: 30%;
-    }
-    .web-container {
-        top: 45%;
-    }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 410px) {
-    .flex-container {
-        top: 34%;
-    }
-
-    .work-container {
-        top: 40%;
-    }
-
-    .web-container {
-        top: 61%;
-    }
-  }
