@@ -295,50 +295,99 @@ h2{
     cursor: pointer;
 }
 
-/*---- SOCIAL ICONS ----*/
 
-.social-i {
-    max-width: 150px;
+/*------CONTACT ----*/
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    text-align: left;
+    font-weight: normal;
+    text-align: center;
+}
+
+.c-item {
     display: block;
-    margin: 15px auto;
-    height: 180px;
-    color: transparent;
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.contact-btn {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    height: 60px;
+    width: 350px;
+    background-color: #000;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    border: none;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 
 .github {
     background-image: url('Images/contact/Github.png');
-    background-size: 100%;
+    background-size: 30%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .github:hover {
     background-image: url('Images/contact/GitHub-Hover.png');
-    background-size: 100%;
+    background-size: 40%;
     background-repeat: no-repeat;
+    background-position: center top;
+    background-color:#6F3EB6; 
 }
 
 .email {
     background-image: url('Images/contact/Email.png');
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .email:hover {
     background-image: url('Images/contact/Email-Hover.png');
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FCE93E;
 }
 
 .linkedin {
     background-image: url('Images/contact/Linkedin.png');
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .linkedin:hover {
     background-image: url('Images/contact/LinkedIn-hover.png');
-    background-size: 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2348B8;
 }
+
+
+
+
+
+
+
 
 /*----- MEDIA QUERIES -------*/
 @media screen and (max-width: 838px) {

@@ -17,31 +17,27 @@
         <span class="name">CRISTI NAME</span>
         <nav class="menu">
             <ul>
-                <ul><a href="home.html">work</a></ul>
-                <ul><a href="about.html">about</a></ul>
-                <ul><a href="contact.html">contact</a></ul>
+                <ul><a href="home.html" class="work-a">work</a></ul>
+                <ul><a href="about.html" class="about-a">about</a></ul>
+                <ul><a href="contact.html" class="contact-a">contact</a></ul>
             </ul>
         </nav>
         <hr id="navLine">
     </div>
     <!------ WORK SECTION ------->
-    <div class="flex-container">
-        <div class="item">
-            <a href="https://github.com/justbycris" target="_blank">
-                <img src="" class="social-i github" alt="Check out my Github profile."/>
-            </a>
-        </div>
-        <div class="item">
-            <a href="">
-                <img src="" class="social-i email" alt="Send me an email!"/>
-            </a>
-        </div>
-        <div class="item">
-            <a href="https://www.linkedin.com/in/cristigtzname/" target="_blank">
-                <img src="" class="social-i linkedin" alt="Check out my LinkedIn."/>
-            </a>
-        </div>
+    <div class="center-container">
+        <span class="contact-title">CONTACT ME</span>
+       <div class="c-item">
+        <a class="contact-btn github" href="https://github.com/justbycris" target="_blank">GitHub</a>
+       </div>
+       <div class="c-item">
+        <a class="contact-btn email" href="#" id="e-address" onclick="copyText()">Email</a>
+       </div>
+       <div class="c-item">
+        <a class="contact-btn linkedin" href="https://www.linkedin.com/in/cristigtzname/" target="_blank">LinkedIn</a>
+       </div>
     </div>
+   
     <script src="app.js"></script>
 </body>
 </html>
