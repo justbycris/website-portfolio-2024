@@ -24,7 +24,7 @@
         <hr id="navLine">
     </div>
     <!------ WORK SECTION ------->
-    <div class="center-container">
+    <!-- <div class="center-container">
         <span class="contact-title">CONTACT ME</span>
        <div class="c-item">
         <a class="contact-btn github" href="https://github.com/justbycris" target="_blank">GitHub</a>
@@ -38,7 +38,30 @@
        <div class="c-item">
         <a class="contact-btn resume" href="Images/CristiName-Resume.pdf" target="_blank">Resume</a>
        </div>
+    </div> -->
+    <div class="contact-container">
+        <form id="contact-form" method="POST" action="sendmail.php">
+            <div class="form-row form-error" style="display:none;"></div>
+            <div class="form-row">
+              <label for="contact-form-name">Name:</label>
+              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-email">Email:</label>
+              <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-message">Message:</label>
+              <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+
     </div>
+
+
+
+
     <footer>
         <a href="https://github.com/justbycris" target="_blank">
             <img src="./../Images/contact/Github.png" class="sm-icon" alt="GitHub icon">
