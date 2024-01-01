@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             width += 4; // Adjust the speed of the animation by changing this value
             loadingLine.style.width = width + '%';
 
-            if (width >= 65) {
+            if (width >= 80) {
                 clearInterval(interval);
             }
         }, 20); // Adjust the interval to control the smoothness of the animation
