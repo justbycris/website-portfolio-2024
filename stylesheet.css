@@ -92,7 +92,7 @@ nav a {
 
 .header hr {
     width: 80%;
-    height: 5px;
+    height: 3px;
     background-color: #000;
     border: none;
     margin: 15px auto 0 auto;
@@ -464,7 +464,7 @@ h2{
     display: block;
     color: #fff;
     text-align: center;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .contact-btn {
